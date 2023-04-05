@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="1177527.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>   
+
+    
+
+        <form>
+          <h1>Login here!</h1><br/>            
+          <label><i class="fa fa-user-circle" aria-hidden="true"></i> Email ID</label><br>
+          <input type="email" required placeholder="Enter your Username / Email"/><br>            
+          <label><i class="fa fas fa-lock" aria-hidden="true"></i> Password</label><br>
+          <input type="password" required placeholder="Enter your password"/><br>            
+             <div id="login"> 
+                <button id="signin">Sign in</button>    
+                <div id="otpless"></div>                  
+                   <div id="tag">
+                        <div class="spinner"></div>  <!-- spinner -->
+                        <p>waiting for network...</p>
+                   </div>
+             
+        </form>    
+    </div>
+
+    <script type="text/javascript" src="https://otpless.com/auth.js"></script>
+        <!-- Get user's whatsapp number and name -->
+    <script type="text/javascript">
+        function otpless(otplessUser) {
+            var waName = otplessUser.waName;
+            var waNumber = otplessUser.waNumber;
+            // Signup/signin the user and redirect to next page
+        }   
+    </script>
+</body>
+</html>
